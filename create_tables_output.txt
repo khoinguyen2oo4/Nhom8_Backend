@@ -1,0 +1,2 @@
+Msg 2714, Level 16, State 6, Server LAPTOP-FP9K342D\SQLEXPRESS01, Line 6
+There is already an object named 'Users' in the database.
