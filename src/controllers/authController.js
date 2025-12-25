@@ -73,8 +73,8 @@ class AuthController {
         });
       }
 
-      // Kiểm tra mật khẩu
-      const isPasswordValid = await bcrypt.compare(password, user.Password);
+      // Kiểm tra mật khẩu (Sửa lại để nhận mật khẩu thường)
+      const isPasswordValid = password === user.Password;
       if (!isPasswordValid) {
         return res.status(401).json({ 
           success: false, 
