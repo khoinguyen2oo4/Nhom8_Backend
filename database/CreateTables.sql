@@ -1,3 +1,5 @@
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Categories' AND xtype='U')
+
 -- 1. Bảng Danh mục (Tách riêng để quản lý tốt hơn, tránh lặp lại text)
 CREATE TABLE Categories (
     CategoryID INT PRIMARY KEY IDENTITY(1,1),
