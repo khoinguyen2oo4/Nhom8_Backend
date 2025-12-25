@@ -4,7 +4,7 @@ const MedicineController = require('../controllers/medicineController');
 const authMiddleware = require('../middleware/authMiddleware');
 
 // Tất cả routes đều yêu cầu xác thực
-router.use(authMiddleware);
+//router.use(authMiddleware);
 
 router.get('/', MedicineController.getAll);
 router.get('/search', MedicineController.search);
